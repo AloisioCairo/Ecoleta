@@ -1,0 +1,37 @@
+/* :root referencia a raiz do documento html e dentro dele pode ter propriedades
+que podem ser repetidas/replicadas em formato de vaiaveis
+*/
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+/* Referencia todos os elementos/seletores do html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    display: flex; /* Coloca os itens para ficar alinhado (na mesma linha) */
+    align-items: center;
+    justify-content: space-between;
+}
